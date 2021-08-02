@@ -18,6 +18,8 @@ function createGrid(gridSize){
         container.appendChild(divGrid);
     }
 
+    makeDrawable();
+
 
 }
 
