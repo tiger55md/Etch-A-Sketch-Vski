@@ -95,8 +95,17 @@ rainbowBtn.addEventListener("click", function(){
     });
 });
 
-let chooseBtn = document.querySelector(".greyscale");
-chooseBtn.addEventListener("click",)
+let chooseBtn = document.querySelector("#input-color");
+chooseBtn.addEventListener("click", function(){
+    let squares = document.querySelectorAll(".grid");
+
+    squares.forEach(function(square){
+        square.onmouseover = function(){
+            this.style.backgroundColor = chooseBtn.value;
+        }
+    });
+
+})
 
 
 
